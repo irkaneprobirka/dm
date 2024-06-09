@@ -1,0 +1,47 @@
+#feedback {
+  background-image: url("/uploads/images.jpeg");
+  padding: 2rem;
+}
+
+.is-invalid{
+    animation: invalid 2s 1 ease;
+}
+
+.invalid-feedback{
+    animation: feedback 2s 1 ease;
+}
+
+@keyframes invalid {
+    0%{
+        box-shadow: 0 0 3px red;
+    }
+    50%{
+        box-shadow: 0 0 23px rgb(152, 26, 26);
+    }
+    100%{
+        box-shadow: 0 0 3px red;
+    }
+    
+}
+
+@keyframes feedback {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes qwe {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#qwe{
+    animation: qwe 1s 1 ease;
+}
