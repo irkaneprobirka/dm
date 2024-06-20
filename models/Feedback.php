@@ -64,7 +64,7 @@ class Feedback extends \yii\db\ActiveRecord
                 . '.'
                 . $this->imageFile->extension;
             $this->imageFile->saveAs('uploads/' . $fileName);
-            $this->image = $fileName;
+            $this->image = "/web/uploads/" . $fileName;
             return true;
         } else {
             return false;
